@@ -1,0 +1,11 @@
+server:
+  port: 8005
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yam_database01?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xmls
+  type-aliases-package: cn.yam.boot.entity

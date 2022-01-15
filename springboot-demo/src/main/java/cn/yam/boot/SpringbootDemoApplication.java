@@ -1,13 +1,15 @@
 package cn.yam.boot;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootParentApplication {
+@MapperScan("cn.yam.boot.mapper")
+public class SpringbootDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootParentApplication.class, args);
+        SpringApplication.run(SpringbootDemoApplication.class, args);
     }
 
 }
